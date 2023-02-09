@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.app {
+    text-align: start;
+    background-color: #fff;
+    height: 30rem;
+    padding: 2em;
+    width: 55rem;
+    max-width: 55rem;
+    border-radius: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.logo {
+    margin-top: 2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+    outline-color: hsl(183, 100%, 15%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+form label {
+    color: hsl(184, 14%, 56%) ;
+    margin-bottom: 0.9em;
+    font-weight: 700;
+}
+
+form div p {
+    color: hsl(184, 14%, 56%) ;
+    margin-bottom: 0.9em;
+    font-weight: 700;
+}
+
+.billInput img, .peopleInput img {
+    position: relative;
+    top: -1.75rem;
+    right: -0.5rem;
+}   
+
+.billInput input, .peopleInput input {
+    width: 100%;
+    padding: 0.3rem;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: hsl(186, 14%, 43%);
+}
+
+.tipSection {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+}
+
+.tipSection button {
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+    border: none;
+    padding: 0.3em 0.3em;
+    font-size: 1.5em;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
+    height: 48px;
+    transition: 200ms ease;
+}
+
+.tipSection button:hover {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+}
+
+.custom-tip {
+    background-color: hsl(189, 41%, 97%) ;
+    height: 47px;
+    border: none;
+    font-size: 1.4em;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    color: hsl(186, 14%, 43%);
+}
+
+.custom-tip::placeholder {
+    color: hsl(184, 14%, 56%);
+}
+
+.custom-tip:focus {
+    outline-color: hsl(183, 100%, 15%);
+}
+
+.peopleCont {
+    margin-top: 2rem;
+}
+
+.app_result {
+    padding: 2rem 2rem;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%) ;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.output-total {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.output-total div {
+    padding: 1rem 0;
+    width: 7rem;
+}
+
+.output-total h2 {
+    color: hsl(185, 41%, 84%);
+    font-size: 1rem;
+}
+
+
+.output-total h3 {
+    color: hsl(184, 14%, 56%);
+    font-size: 0.75rem;
+}
+
+.output-total span {
+    font-size: 2.5rem;
+    color: hsl(172, 67%, 45%);
+    text-align: right;
+    font-weight: 700;
+}
+
+
+.app_result button {
+    width: 100%;
+    padding: 1rem;
+    background-color: hsl(183, 100%, 25%);
+    border: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+.app_result button:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(186, 14%, 43%);
+}
+
+
+@media screen and (max-width: 768px) {
+    .app {
+        width: 100%;
+        grid-template-columns: 1fr;
+        height: 100%;
+        flex-wrap: wrap;
+    } 
+}
